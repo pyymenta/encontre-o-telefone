@@ -1,7 +1,7 @@
 {
   "name": "encontre-o-telefone",
   "version": "1.0.0",
-  "description": "A project to develop a solution for this problem: http://dojopuzzles.com/problemas/exibe/encontre-o-telefone/",
+  "description": "A project to develop a solution to this problem: http://dojopuzzles.com/problemas/exibe/encontre-o-telefone/",
   "main": "index.js",
   "scripts": {
     "lint": "node node_modules/eslint/bin/eslint.js src/*.js",
