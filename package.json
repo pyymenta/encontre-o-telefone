@@ -7,7 +7,14 @@
     "lint": "node node_modules/eslint/bin/eslint.js src/*.js",
     "test": "./node_modules/mocha/bin/mocha --reporter nyan tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/mocha/bin/mocha --reporter nyan tests/**/*.spec.js --require babel-register --watch",
-    "test:coverage": "nyc npm test"
+    "test:coverage": "node node_modules/nyc/bin/nyc.js npm test"
+  },
+  "nyc": {
+    "functions": 90,
+    "lines": 90,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "keywords": [
     "DojoPuzzle",
