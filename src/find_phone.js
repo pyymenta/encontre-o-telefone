@@ -30,4 +30,6 @@ const decryptWord = word => word.split('').reduce((fullNumber, currentNum, index
   return fullNumber + getNumberKeyboard(currentNum);
 });
 
-export { decryptWord };
+const decryptWords = words => words.map(word => decryptWord(word));
+
+export { decryptWord, decryptWords };
